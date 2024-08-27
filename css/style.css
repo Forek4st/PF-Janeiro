@@ -72,38 +72,58 @@ nav {
 /* Data Section */
 .data {
   background-color: #9a927b54;
-  height: 400px;
-  width: 100%;
-  margin: 100px auto;
+  height: 600px;
+  width: 90%;
+  margin: 200px auto 100px auto;
   display: flex;
+  flex-direction: row;
   padding: 0px 100px;
   align-items: center;
+  justify-content: center; /* Centra verticalmente */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 
-  img {
-    margin-left: auto;
-    height: 350px;
-  }
+.data img {
+  height: 650px;
+}
 
-  div {
-    margin-left: 10px;
-    text-align: center;
+.data div {
+  text-align: center;
+  margin-left: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centra verticalmente el contenido del div */
+  align-items: flex-end; /* Centra horizontalmente el contenido del div */
+}
 
-    h1 {
-      color: black;
-      font-size: 50px;
-      font-weight: bolder;
-      margin-top: 20px;
-    }
+.data div h1 {
+  width: 100%;
+  color: black;
+  font-size: 50px;
+  font-weight: bolder;
+  margin-top: 20px;
+}
 
-    h2 {
-      text-align: justify;
-      padding: 20px;
-      line-height: 25px;
-      margin-left: 40px;
-      font-weight: 400;
-    }
-  }
+.data div p {
+  text-align: justify;
+  width: 100%;
+  padding: 20px;
+  line-height: 30px;
+  font-weight: 350;
+  margin: 20px auto;
+}
+
+.data button {
+  color: black;
+  background-color: black;
+  margin: 20px auto;
+  text-decoration: none;
+  color: white;
+}
+
+.data button a {
+  text-decoration: none;
+  color: white;
 }
 
 /* Footer */
@@ -608,12 +628,14 @@ button {
 
   .data-container {
     display: flex;
+    width: 100vw;
     flex-direction: column;
     align-items: center;
     margin: 0;
   }
 
   .data {
+    width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -625,9 +647,9 @@ button {
   }
 
   .data img {
-    width: 100%; /* Ajusta el tamaño de la imagen según tus necesidades */
+    width: 100%;
     height: 350px;
-    margin-bottom: 20px; /* Espacio entre la imagen y el contenido */
+    margin-bottom: 20px;
     object-fit: cover;
   }
 
@@ -639,6 +661,10 @@ button {
     margin: 0;
   }
 
+  .data div h1 {
+    margin: 0;
+  }
+
   .data div p {
     text-align: justify;
     padding: 20px;
@@ -646,15 +672,11 @@ button {
     font-weight: 350;
   }
 
-  .data div h1 {
-    margin: 0;
-  }
-
   .data button {
     display: flex;
-    justify-content: center; /* Centra horizontalmente el botón */
-    align-items: center; /* Centra verticalmente el botón */
-    margin: 20px auto; /* Asegura que el botón esté centrado en su contenedor */
+    justify-content: center;
+    align-items: center;
+    margin: 15px auto 40px auto;
   }
 
   .data button a {
@@ -712,5 +734,62 @@ button {
   .blog-container button a {
     text-decoration: none;
     color: white;
+  }
+  /* Contact */
+
+  .blog-container button a {
+    text-decoration: none;
+    color: white;
+  }
+
+  /* Contact */
+
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    h1 {
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  }
+
+  .contact-content {
+    width: 100%;
+  }
+
+  .contact-container section {
+    width: 100%;
+    label {
+      font-size: 20px;
+    }
+  }
+
+  .contact-container section input {
+    width: 100%;
+    margin: 10px 0;
+    padding: 15px;
+  }
+
+  .contact-container section textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 20px;
+  }
+
+  .contact-container section button {
+    margin: 20px 0 50px 0;
+  }
+
+  .contact-container aside {
+    display: none;
+  }
+
+  .contact-form {
+    margin: 20px 0;
   }
 }
