@@ -604,6 +604,8 @@ button {
     margin-bottom: 10px; /* Espacio entre la imagen y el contenido */
   }
 
+  /* About */
+
   .data-container {
     display: flex;
     flex-direction: column;
@@ -635,12 +637,32 @@ button {
     align-items: center;
     padding: 20px;
     margin: 0;
-
-    & h2,
-    h1 {
-      margin: 0;
-    }
   }
+
+  .data div p {
+    text-align: justify;
+    padding: 20px;
+    line-height: 25px;
+    margin-left: 40px;
+    font-weight: 400;
+  }
+
+  .data div h1 {
+    margin: 0;
+  }
+
+  .data button {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente el botón */
+    align-items: center; /* Centra verticalmente el botón */
+    margin: 20px auto; /* Asegura que el botón esté centrado en su contenedor */
+  }
+
+  .data button a {
+    text-decoration: none;
+    color: white;
+  }
+
   /* Blog */
 
   .blog-container {
