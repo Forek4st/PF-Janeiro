@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" href="../images/favicon.png" type="image/png" />
+    <title>Contact</title>
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <header>
+      <nav>
+        <a href="index.html" class="navLogo">
+          <img src="../images/byTanneLogo.png" alt="By Tanne Logo | TM" />
+        </a>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="./about.html">About Me</a></li>
+          <li><a href="./portfolio.html">Portfolio</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Main section -->
+    <main class="contact-container">
+      <!-- Aside container (img) -->
+      <aside>
+        <img
+          src="../images/contact.jpg"
+          alt="Contact Image"
+          class="contact-img"
+        />
+      </aside>
+      <!-- Section container -->
+      <section>
+        <h1>Contact</h1>
+        <!-- Form container -->
+        <form class="contact-form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Your name" />
+
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your email"
+            required
+          />
+
+          <label for="phone">Phone:</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="Your phone number"
+          />
+
+          <label for="comments">Comments:</label>
+          <textarea
+            id="comments"
+            name="comments"
+            rows="4"
+            placeholder="Your comments"
+            required
+          ></textarea>
+
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+      <a href="../index.html">
+        <img
+          src="../images/byTanneLogo.png"
+          alt="By Tanne logo"
+          class="footer-logo"
+      /></a>
+      <div class="footer-links">
+        <a href="./pages/about.html">About</a>
+        <a href="./pages/contact.html">Contact</a>
+        <a href="https://thesefourwallsblog.com/" target="_blank">Sponsors</a>
+      </div>
+      <div class="media-info">
+        <a href="https://instagram.com/by_tanne" target="_blank"
+          ><img src="../images/media-instagram.svg" alt="Instagram Logo"
+        /></a>
+        <a href="https://linkedin.com" target="_blank"
+          ><img src="../images/media-linkedin.svg" alt="Linkedin Logo"
+        /></a>
+      </div>
+      <small class="copy-right"
+        >By Tanne © 2024 | Made by
+        <a href="https://github.com/Forek4st" target="_blank"
+          >Forek4st</a
+        ></small
+      >
+    </footer>
+  </body>
+</html>
