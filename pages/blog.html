@@ -22,7 +22,21 @@
           <li><a href="./contact.html">Contact</a></li>
         </ul>
         <div class="menu-mobile-icon">
-          <img src="../images/mobile-img/menu-hamburger.svg" alt="" />
+          <img
+            src="../images/mobile-img/menu-hamburger.svg"
+            alt=""
+            onclick="toggleMenu()"
+          />
+        </div>
+        <div class="menu-mobile">
+          <button class="menu-mobile-close" onclick="closeMenu()">X</button>
+          <div class="menu-mobile-container">
+            <a href="../index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+          </div>
         </div>
       </nav>
     </header>
@@ -78,5 +92,15 @@
         ></small
       >
     </footer>
+    <script>
+      function toggleMenu() {
+        const menuMobile = document.querySelector('.menu-mobile');
+        menuMobile.classList.toggle('active');
+      }
+      function closeMenu() {
+        const menuMobile = document.querySelector('.menu-mobile');
+        menuMobile.classList.remove('active');
+      }
+    </script>
   </body>
 </html>

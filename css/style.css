@@ -69,6 +69,10 @@ nav {
 .menu-mobile-icon {
   display: none;
 }
+
+.menu-mobile {
+  display: none;
+}
 /* Data Section */
 .data {
   background-color: #9a927b54;
@@ -506,6 +510,55 @@ button {
   /* Nav */
   nav ul {
     display: none;
+  }
+
+  .menu-mobile {
+    position: absolute;
+    display: none; /* Ocultar por defecto */
+    flex-direction: column;
+    align-items: center;
+    background-color: #191916;
+    z-index: 1000;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+  }
+
+  .menu-mobile.active {
+    display: flex; /* Mostrar cuando esté activo */
+  }
+
+  .menu-mobile-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 120px;
+  }
+
+  .menu-mobile-container a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 30px;
+  }
+
+  .menu-mobile-container a:hover {
+    text-decoration: underline;
+  }
+
+  .menu-mobile-close {
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    height: 30px;
+    width: 30px;
+    font-size: 25px;
+    font-weight: 300;
+    padding: 0;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
   }
 
   .menu-mobile-icon {
