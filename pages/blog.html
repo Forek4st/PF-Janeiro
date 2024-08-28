@@ -16,12 +16,12 @@
         </a>
         <ul>
           <li><a href="../index.html">Home</a></li>
-          <li><a href="./about.html">About Me</a></li>
-          <li><a href="./portfolio.html">Portfolio</a></li>
-          <li><a href="./blog.html">Blog</a></li>
-          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
-        <div class="menu-mobile-icon">
+        <div class="menu-mobile-open">
           <img
             src="../images/mobile-img/menu-hamburger.svg"
             alt=""
@@ -29,7 +29,13 @@
           />
         </div>
         <div class="menu-mobile">
-          <button class="menu-mobile-close" onclick="closeMenu()">X</button>
+          <div class="menu-mobile-close">
+            <img
+              src="../images/mobile-img/close.svg"
+              alt="close button"
+              onclick="closeMenu()"
+            />
+          </div>
           <div class="menu-mobile-container">
             <a href="../index.html">Home</a>
             <a href="about.html">About Me</a>
@@ -38,7 +44,6 @@
             <a href="contact.html">Contact</a>
           </div>
         </div>
-      </nav>
     </header>
     <!-- Main container-->
     <main class="blog-container">
