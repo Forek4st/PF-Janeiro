@@ -521,7 +521,6 @@ button {
 
   .menu-mobile {
     position: absolute;
-    display: none; /* Ocultar por defecto */
     flex-direction: column;
     align-items: center;
     background-color: #191916;
@@ -530,10 +529,14 @@ button {
     height: 100vh;
     top: 0;
     left: 0;
+    transition: opacity 0.5s ease;
+    opacity: 0;
+    visibility: hidden;
   }
 
   .menu-mobile.active {
-    display: flex; /* Mostrar cuando esté activo */
+    opacity: 1; /* Hacer visible */
+    visibility: visible; /* Hacer visible */
   }
 
   .no-scroll {
