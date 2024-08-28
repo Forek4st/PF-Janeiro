@@ -17,6 +17,10 @@ body {
   }
 }
 
+body.no-scroll {
+  overflow: hidden;
+}
+
 /* Navigation */
 nav {
   display: flex;
@@ -530,6 +534,10 @@ button {
 
   .menu-mobile.active {
     display: flex; /* Mostrar cuando esté activo */
+  }
+
+  .no-scroll {
+    overflow: hidden;
   }
 
   .menu-mobile-container {

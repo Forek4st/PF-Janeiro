@@ -123,12 +123,15 @@
     </footer>
     <script>
       function toggleMenu() {
-        const menuMobile = document.querySelector('.menu-mobile');
-        menuMobile.classList.toggle('active');
+        const menu = document.querySelector('.menu-mobile');
+        menu.classList.toggle('active');
+        document.body.classList.toggle('no-scroll');
       }
+
       function closeMenu() {
-        const menuMobile = document.querySelector('.menu-mobile');
-        menuMobile.classList.remove('active');
+        const menu = document.querySelector('.menu-mobile');
+        menu.classList.remove('active');
+        document.body.classList.remove('no-scroll');
       }
     </script>
   </body>
