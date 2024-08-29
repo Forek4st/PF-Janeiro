@@ -854,3 +854,26 @@ button {
     margin: 20px 0;
   }
 }
+
+@media screen and (min-width: 1500px) and (max-width: 1800px) {
+  .portfolio-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar el contenido horizontalmente */
+  }
+
+  .img-portfolio-container {
+    width: 100%;
+    display: grid; /* Asegúrate de que este contenedor también use grid */
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px; /* Añadir espacio entre las imágenes */
+  }
+
+  .img-portfolio-container img {
+    width: 100%; /* Ajustar el ancho de las imágenes al contenedor */
+    width: 400px; /* Limitar el ancho máximo de las imágenes */
+  }
+  img:last-child {
+    display: none;
+  }
+}
