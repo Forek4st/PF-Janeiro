@@ -11,7 +11,7 @@
 
 /* Body */
 body {
-  margin-top: 100px; /* Ajusta el margen superior según la altura del nav */
+  margin-top: 100px;
   & main {
     margin-top: 150px;
   }
@@ -74,6 +74,26 @@ nav {
 .modal-open-button {
   display: none;
 }
+button {
+  background-color: black;
+  margin-left: 200px;
+  margin-top: 15px;
+  text-transform: uppercase;
+  color: white;
+  border: none;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  padding: 23px 33px;
+  font-size: 1em;
+  font-weight: 500;
+}
+
 /* Data Section */
 .data {
   background-color: #9a927b54;
@@ -84,7 +104,7 @@ nav {
   flex-direction: row;
   padding: 0px 100px;
   align-items: center;
-  justify-content: center; /* Centra verticalmente */
+  justify-content: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -97,8 +117,8 @@ nav {
   margin-left: 60px;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Centra verticalmente el contenido del div */
-  align-items: flex-end; /* Centra horizontalmente el contenido del div */
+  justify-content: center;
+  align-items: flex-end;
 }
 
 .data div h1 {
@@ -205,16 +225,14 @@ footer {
 
 .work-card {
   display: flex;
-  align-items: flex-start; /* Alinea los elementos en la parte superior */
+  align-items: flex-start;
   position: relative;
   max-width: 1200px;
   margin: 50px auto;
   border-radius: 8px;
   box-shadow: 25px 25px 76px 8px rgba(0, 0, 0, 0.13);
   box-sizing: border-box;
-  width: fit-content; /* Ajusta el ancho al contenido */
-
-  /* Elimina las alturas fijas */
+  width: fit-content;
   img {
     width: 584px;
     height: 700px;
@@ -225,7 +243,7 @@ footer {
     text-align: justify;
     padding: 30px;
     width: 584px;
-    height: 700px; /* Permite que la altura se ajuste automáticamente al contenido */
+    height: 700px;
     line-height: 30px;
 
     h2 {
@@ -259,7 +277,7 @@ footer {
   align-items: center;
 
   width: 100%;
-  text-align: center; /* Opcional, para centrar el texto */
+  text-align: center;
 }
 
 .more-projects h2 {
@@ -355,7 +373,7 @@ footer {
   }
 }
 /* Blog */
-/* Estilos para la secciÃ³n de blog */
+
 .blog-container main,
 .blog-container h1 {
   margin: 50px auto;
@@ -368,7 +386,6 @@ footer {
   margin-bottom: 10px;
 }
 
-/* Estilo para las secciones del blog */
 .blog-container section {
   display: flex;
   flex-direction: column;
@@ -389,7 +406,6 @@ footer {
   text-transform: uppercase;
 }
 
-/* Estilo para las imágenes en el blog */
 .blog-container img {
   display: block;
   max-width: 100%;
@@ -406,36 +422,31 @@ footer {
   margin: 50px auto 50px auto;
 }
 
-/* Estilo para los botones en el blog */
 .blog-container button {
   display: block;
-  margin: 20px auto; /* Centra horizontalmente el botón */
+  margin: 20px auto;
 }
 
 .blog-container button a {
   text-decoration: none;
   color: white;
 }
-/* Contact */
 
-/* Estilo para el contenedor de contacto */
+/* Contact Page Styles */
 .contact-container {
   display: flex;
   justify-content: center;
   align-items: center;
-
   width: 60%;
   max-height: 750px;
   margin: 200px auto;
   background-color: #9a927b54;
   padding: 20px;
+  img {
+    height: 650px;
+  }
 }
 
-.contact-container img {
-  height: 650px;
-}
-
-/* Estilos para la secciÃ³n de contacto */
 .contact-container aside {
   display: flex;
   justify-content: center;
@@ -448,38 +459,35 @@ footer {
   flex-direction: column;
   align-items: center;
   width: 50%;
+  h1 {
+    font-size: 60px;
+    margin-bottom: 30px;
+    justify-content: start;
+    align-content: start;
+    font-weight: bolder;
+  }
 }
 
-.contact-container section h1 {
-  font-size: 60px;
-  margin-bottom: 30px;
-  justify-content: start;
-  align-content: start;
-  font-weight: bolder;
-}
-
-/* Estilo para el formulario de contacto */
 .contact-form {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-}
-
-.contact-form label {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 500px;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  margin-bottom: 15px;
-  box-sizing: border-box;
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  input,
+  textarea {
+    width: 500px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    resize: none;
+  }
 }
 
 .contact-form input::placeholder,
@@ -493,38 +501,13 @@ footer {
   outline: none;
 }
 
-.contact-form textarea {
-  resize: none; /* Impide el cambio de tamaÃ±o del Ã¡rea de texto */
-}
 .send-button {
   display: flex;
   justify-content: center;
   margin: 0;
-}
-
-.send-button button {
-  margin: 0;
-}
-
-/* Estilos para los botones en el formulario y otros lugares */
-button {
-  background-color: black;
-  margin-left: 200px;
-  margin-top: 15px;
-  text-transform: uppercase;
-  color: white;
-  border: none;
-  padding: 15px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  border-radius: 4px;
-  cursor: pointer;
-  letter-spacing: 2px;
-  padding: 23px 33px;
-  font-size: 1em;
-  font-weight: 500;
+  button {
+    margin: 0;
+  }
 }
 
 /* MEDIA QUERIES */
@@ -532,15 +515,17 @@ button {
 /* MQ mobile */
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
-  /* Nav */
+  /* Nav bar */
   header nav ul {
     display: none;
   }
+
+  /* Hamburguer menu modal */
   header .modal-open-button {
-    display: flex; /* Asegurar que se muestre el botón de hamburguesa */
+    display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 1100; /* Asegurar que esté por encima de la navbar */
+    z-index: 1100;
     width: 40px;
     height: 40px;
     border: 0;
@@ -550,7 +535,7 @@ button {
   }
 
   header .modal-open-button img {
-    width: 40px; /* Ajustar el tamaño del icono de hamburguesa */
+    width: 40px;
     height: 40px;
   }
 
@@ -574,14 +559,14 @@ button {
     border: 0;
     border-radius: 0;
     margin: 0;
-    padding: 0; /* Asegurar que no haya padding */
-    box-sizing: border-box; /* Incluir el borde y el padding en el tamaño total del elemento */
+    padding: 0;
+    box-sizing: border-box;
   }
 
   header .modal-body {
     display: flex;
     margin: 0;
-    border-radius: 0px;
+    border-radius: 0;
     padding: 0;
   }
 
@@ -640,15 +625,18 @@ button {
     height: 90px;
     width: auto;
   }
-  /* Landing Main container */
+
+  /* Landing page */
   .card-container {
-    margin-bottom: 0px;
+    margin-bottom: 0;
     background-color: #9a927b22;
   }
+
   .work-card {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    box-shadow: none;
   }
 
   .work-card img {
@@ -662,7 +650,24 @@ button {
 
   .work-card .work-description {
     width: 100%;
+    max-height: 100%;
     padding: 15px;
+    box-shadow: none;
+  }
+
+  .work-card .work-description h2 {
+    margin: 5px 0;
+  }
+
+  .work-card .work-img,
+  .work-card .work-img-left {
+    width: 100%;
+    height: 450px;
+    margin: 0;
+    object-fit: fill;
+    border-radius: 0;
+    order: -1;
+    margin-bottom: 10px;
   }
 
   .landing-img {
@@ -674,28 +679,29 @@ button {
 
   .more-projects {
     background-color: #9a927b22;
-    h2 {
-      font-weight: 600;
-      color: black;
-    }
+  }
+
+  .more-projects h2 {
+    font-weight: 600;
+    color: black;
   }
 
   /* Portfolio */
   .portfolio-container {
-    width: 100vw; /* Ajusta el ancho al 100% del viewport */
-    row-gap: 0px;
+    width: 100vw;
+    row-gap: 0;
     background-color: #9a927b22;
   }
 
   .img-portfolio-container {
     margin: 15px auto;
     grid-template-columns: 1fr;
-    gap: 0px;
+    gap: 0;
   }
 
   .img-portfolio-container img {
-    width: 100%; /* Ajusta el ancho de la imagen al contenedor */
-    height: auto; /* Mantiene la proporción de la imagen */
+    width: 100%;
+    height: auto;
     margin-bottom: 10px;
   }
 
@@ -704,46 +710,12 @@ button {
     margin-top: 30px;
   }
 
-  /* Work card mobile view */
   .card-container {
     height: auto;
     width: 100vw;
   }
 
-  .work-card {
-    box-shadow: none;
-  }
-
-  .work-card .work-description {
-    width: 100%;
-    height: 100%;
-    box-shadow: none;
-    padding: 15px;
-  }
-
-  .work-card .work-description h2 {
-    margin: 5px 0;
-  }
-
-  .work-card .work-img,
-  .work-card .work-img-left {
-    width: 100%; /* Ocupa el 100% del ancho disponible del contenedor */
-    height: 450px;
-    margin: 0;
-    object-fit: fill;
-    border-radius: 0px;
-  }
-
-  .work-img,
-  .work-img-left {
-    order: -1; /* Mueve las imágenes al principio */
-    width: auto; /* Ajusta el ancho automáticamente */
-    height: auto; /* Ajusta la altura automáticamente */
-    margin-bottom: 10px; /* Espacio entre la imagen y el contenido */
-  }
-
-  /* About */
-
+  /* About page */
   .data-container {
     display: flex;
     width: 100vw;
@@ -803,10 +775,9 @@ button {
     color: white;
   }
 
-  /* Blog */
-
+  /* Blog page */
   .blog-container {
-    margin: 0px;
+    margin: 0;
   }
 
   .blog-container h1 {
@@ -834,10 +805,12 @@ button {
     height: 100%;
     margin: 10px 0;
   }
+
   .blog-container h2 {
     line-height: 40px;
     margin: 10px;
   }
+
   .blog-container p,
   .blog-container h1 {
     padding: 20px;
@@ -846,7 +819,7 @@ button {
 
   .blog-container button {
     display: flex;
-    justify-content: center; /* Centra horizontalmente el botón */
+    justify-content: center;
     align-items: center;
     margin: 60px auto;
   }
@@ -855,33 +828,25 @@ button {
     text-decoration: none;
     color: white;
   }
-  /* Contact */
 
-  .blog-container button a {
-    text-decoration: none;
-    color: white;
-  }
-
-  /* Contact */
+  /* Contact page */
   .contact-container {
     width: 100%;
-    min-height: calc(
-      95vh - 100px
-    ); /* Ajusta este valor según la altura del footer */
+    min-height: calc(95vh - 100px);
     padding: 0;
     margin: 0;
     margin-top: 100px;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centra verticalmente el contenido */
+    justify-content: center;
     overflow: auto;
   }
 
   .contact-container section {
-    width: 100%; /* Ajusta el ancho de la sección */
-    margin: 0 auto; /* Aplica márgenes automáticos para centrarla */
-    padding: 0px 20px;
-    flex: 1; /* Ocupa el espacio disponible dentro de .contact-container */
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    flex: 1;
   }
 
   .contact-container section h1 {
@@ -898,7 +863,7 @@ button {
   }
 
   .contact-container section button {
-    margin: 30px 0; /* Márgenes arriba y abajo */
+    margin: 30px 0;
   }
 
   .contact-container aside {
@@ -908,6 +873,383 @@ button {
   .contact-form {
     margin: 0 auto;
   }
+
+  .send-button {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .send-button button {
+    margin: 0;
+  }
+}
+
+/* MQ tablets */
+
+@media screen and (min-width: 481px) and (max-width: 900px) {
+  /* Global style */
+  body {
+    background-color: whitesmoke;
+  }
+  /* Nav bar */
+  header nav ul {
+    display: none;
+  }
+
+  /* Hamburguer menu modal */
+  header .modal-open-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1100;
+    width: 40px;
+    height: 40px;
+    border: 0;
+    margin: 0;
+    margin-right: 15px;
+    padding: 0;
+  }
+
+  header .modal-open-button img {
+    width: 40px;
+    height: 40px;
+  }
+
+  header .modal-open-button:focus,
+  header .modal-open-button:active {
+    outline: none;
+    border: none;
+  }
+
+  header .modal-dialog {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+  }
+
+  header .modal-content {
+    display: flex;
+    background-color: #191916;
+    height: 100%;
+    width: 100%;
+    border: 0;
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  header .modal-body {
+    display: flex;
+    margin: 0;
+    border-radius: 0;
+    padding: 0;
+  }
+
+  header .btn-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100px;
+  }
+
+  header .mobile-logo {
+    display: none;
+  }
+
+  header .btn-close {
+    padding: 0;
+    margin: 0;
+    height: 40px;
+    width: 40px;
+    margin-right: 35px;
+  }
+
+  header .btn-close img {
+    width: 40px;
+    height: 40px;
+  }
+
+  header .btn-close:active,
+  header .btn-close:focus,
+  header .btn-close:hover {
+    box-shadow: none;
+  }
+
+  header .modal-body ul {
+    display: flex;
+    width: 100%;
+    padding: 0;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 300px;
+  }
+
+  header .modal-body ul li a {
+    list-style-type: none;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  header .modal-body ul li a:hover {
+    text-decoration: underline;
+  }
+
+  header nav .navLogo img {
+    height: 90px;
+    width: auto;
+  }
+
+  /* Landing page */
+  .card-container {
+    margin-bottom: 0;
+    background-color: whitesmoke;
+  }
+
+  .work-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: none;
+  }
+
+  .work-card img {
+    width: 100%;
+  }
+
+  .work-card .black-label,
+  .work-card .black-label-left {
+    display: none;
+  }
+
+  .work-card .work-description {
+    width: 100%;
+    max-height: 100%;
+    padding: 15px;
+    box-shadow: none;
+    height: 550px;
+  }
+
+  .work-card .work-description h2 {
+    margin: 5px 0;
+  }
+
+  .work-card .work-img,
+  .work-card .work-img-left {
+    width: 100%;
+    height: 450px;
+    margin: 0;
+    object-fit: fill;
+    border-radius: 0;
+    order: -1;
+    margin-bottom: 10px;
+  }
+
+  .landing-img {
+    width: 100vw;
+    height: 100vh;
+    margin-top: -20px;
+    object-fit: cover;
+  }
+
+  .more-projects {
+    background-color: whitesmoke;
+  }
+
+  .more-projects h2 {
+    font-weight: 600;
+    color: black;
+  }
+
+  /* Portfolio */
+  .portfolio-container {
+    width: 100vw;
+  }
+
+  .img-portfolio-container {
+    margin: 15px auto;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .img-portfolio-container img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .portfolio-container h1 {
+    font-size: 60px;
+    margin-top: 30px;
+  }
+
+  .card-container {
+    height: auto;
+    width: 100vw;
+  }
+
+  /* About page */
+  .data-container {
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+
+  .data {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: whitesmoke;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .data img {
+    width: 100%;
+    height: 350px;
+    margin-bottom: 20px;
+    object-fit: cover;
+  }
+
+  .data div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 0;
+  }
+
+  .data div h1 {
+    margin: 0;
+    font-size: 60px;
+  }
+
+  .data div p {
+    text-align: justify;
+    padding: 20px;
+    line-height: 25px;
+    font-weight: 350;
+  }
+
+  .data button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px auto 40px auto;
+  }
+
+  .data button a {
+    text-decoration: none;
+    color: white;
+  }
+
+  /* Blog page */
+  .blog-container {
+    margin: 0;
+  }
+
+  .blog-container h1 {
+    margin: 20px 0;
+    font-size: 60px;
+    background-color: whitesmoke;
+  }
+
+  .blog-title {
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .blog-container section {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+  }
+
+  .blog-container img {
+    width: 90%;
+    margin: 10px auto;
+    height: 100%;
+  }
+
+  .blog-container h2 {
+    line-height: 40px;
+    margin: 10px;
+  }
+
+  .blog-container p,
+  .blog-container h1 {
+    padding: 20px;
+    margin: 0;
+  }
+
+  .blog-container button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px auto;
+  }
+
+  .blog-container button a {
+    text-decoration: none;
+    color: white;
+  }
+
+  /* Contact page */
+  .contact-container {
+    width: 90%;
+    min-height: calc(95vh - 100px);
+    padding: 0;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-color: whitesmoke;
+  }
+
+  .contact-container section {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    flex: 1;
+  }
+
+  .contact-container section h1 {
+    font-weight: bolder;
+    margin: 30px 0;
+    font-size: 60px;
+  }
+
+  .contact-container section input,
+  .contact-container section textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 15px;
+  }
+
+  .contact-container section button {
+    margin: 30px 0;
+  }
+
+  .contact-container aside {
+    display: none;
+  }
+
+  .contact-form {
+    margin: 0 auto;
+  }
+
   .send-button {
     display: flex;
     justify-content: center;
@@ -922,7 +1264,20 @@ button {
 /* MQ laptops */
 
 @media screen and (min-width: 1500px) and (max-width: 1800px) {
-  /* Portfolio   */
+  /* Global style */
+  body {
+    background-color: whitesmoke;
+  }
+  /* Landing */
+  .work-card {
+    height: 730px;
+    img {
+      height: 100%;
+    }
+  }
+
+  /* Portfolio */
+
   .portfolio-container {
     width: 100%;
     margin: 0;
@@ -935,34 +1290,38 @@ button {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
   }
+
   .portfolio-container .img-portfolio-container img {
-    width: 100%; /* Ajusta el ancho de la imagen al contenedor */
-    height: 100%; /* Mantiene la proporción de la imagen */
+    width: 100%;
+    height: 100%;
   }
+
   .portfolio-container .img-portfolio-container img:last-child {
-    display: none; /* Oculta la última imagen */
+    display: none;
   }
 
   /* Contact */
-
   .contact-container {
     width: 90%;
     margin: 150px auto 100px auto;
     overflow: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
 
   .contact-container section h1 {
-    margin: 0px;
+    margin: 0;
   }
+
   .send-button {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     margin-top: 20px;
-    button {
-      margin: 0;
-    }
+  }
+
+  .send-button button {
+    margin: 0;
   }
 
   .contact-form {
@@ -971,34 +1330,32 @@ button {
     align-items: start;
   }
 
-  .contact-container {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-
   .contact-form input,
   label,
   textarea {
     width: 90%;
     display: flex;
-    margin: 15px 0 0px 20px;
+    margin: 15px 0 0 20px;
   }
+
   .contact-form textarea {
     resize: none;
     width: 90%;
   }
-  /* Blog */
 
+  /* Blog */
   .blog-container {
     margin-bottom: 100px;
     width: 100%;
+  }
 
-    section {
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      width: 90%;
-    }
-    h1 {
-      font-weight: bolder;
-    }
+  .blog-container section {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+  }
+
+  .blog-container h1 {
+    font-weight: bolder;
   }
 
   .blog-container img {
@@ -1033,11 +1390,11 @@ button {
     gap: 20px;
   }
   .portfolio-container .img-portfolio-container img {
-    width: 100%; /* Ajusta el ancho de la imagen al contenedor */
-    height: 100%; /* Mantiene la proporción de la imagen */
+    width: 100%;
+    height: 100%;
   }
   .portfolio-container .img-portfolio-container img:last-child {
-    display: none; /* Oculta la última imagen */
+    display: none;
   }
 
   /* Contact */
@@ -1045,7 +1402,7 @@ button {
     display: flex;
     width: 90%;
     height: 90vh;
-    margin: 200px auto; /* Centra el contenedor horizontalmente */
+    margin: 200px auto;
   }
 
   .contact-container aside {
@@ -1057,14 +1414,14 @@ button {
   }
 
   .contact-container aside img {
-    width: 100%; /* Ocupa el 100% del ancho del aside */
-    height: 100%; /* Ocupa el 100% de la altura del aside */
-    object-fit: cover; /* Mantiene la proporción de la imagen y cubre todo el contenedor */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   .contact-container section {
-    flex: 1; /* Asegura que la sección ocupe el espacio disponible */
-    padding: 20px; /* Añade un poco de padding para el contenido */
+    flex: 1;
+    padding: 20px;
   }
 
   .contact-form {
@@ -1080,9 +1437,9 @@ button {
 
   .send-button {
     display: flex;
-    justify-content: center; /* Centra el botón dentro del div */
-    width: 100%; /* Asegura que el div ocupe todo el ancho del formulario */
-    margin-top: 10px; /* Añade un margen superior si es necesario */
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
   }
   /* Blog */
 
