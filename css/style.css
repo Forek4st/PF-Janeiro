@@ -685,7 +685,27 @@ footer {
     font-weight: 600;
     color: black;
   }
-
+  .card-one,
+  .card-two,
+  .card-three,
+  .card-four {
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+  .card-one {
+    margin-bottom: 30px;
+    height: 1100px;
+  }
+  .card-two {
+    height: 1120px;
+  }
+  .card-three {
+    height: 1000px;
+  }
+  .card-four {
+    height: 1000px;
+    margin-bottom: 40px;
+  }
   /* Portfolio */
   .portfolio-container {
     width: 100vw;
