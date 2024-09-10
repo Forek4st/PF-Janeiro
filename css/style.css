@@ -56,7 +56,8 @@ nav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    flex-grow: 1;
+    height: 100%;
+    margin: 0;
 
     li {
       list-style: none;
@@ -70,14 +71,7 @@ nav {
     }
   }
 }
-.menu-mobile-open {
-  display: none;
-}
-
-.menu-mobile-close {
-  display: none;
-}
-.menu-mobile-container {
+.modal-open-button {
   display: none;
 }
 /* Data Section */
@@ -309,6 +303,7 @@ footer {
   .label-text {
     font-size: 25px;
     text-transform: uppercase;
+    margin: 0;
   }
 }
 
@@ -366,6 +361,7 @@ footer {
   margin: 50px auto;
   text-align: center;
   font-size: 60px;
+  font-weight: bolder;
 }
 
 .blog-title {
@@ -389,7 +385,7 @@ footer {
   text-align: center;
   margin: 60px;
   font-size: 40px;
-  font-weight: 400;
+  font-weight: 500;
   text-transform: uppercase;
 }
 
@@ -459,10 +455,14 @@ footer {
   margin-bottom: 30px;
   justify-content: start;
   align-content: start;
+  font-weight: bolder;
 }
 
 /* Estilo para el formulario de contacto */
 .contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
 }
 
@@ -496,6 +496,15 @@ footer {
 .contact-form textarea {
   resize: none; /* Impide el cambio de tamaÃ±o del Ã¡rea de texto */
 }
+.send-button {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.send-button button {
+  margin: 0;
+}
 
 /* Estilos para los botones en el formulario y otros lugares */
 button {
@@ -518,80 +527,119 @@ button {
   font-weight: 500;
 }
 
-/* Media queries */
+/* MEDIA QUERIES */
 
-/* Mobile */
+/* MQ mobile */
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
   /* Nav */
-  nav ul {
+  header nav ul {
     display: none;
   }
-
-  .menu-mobile {
-    position: absolute;
-    flex-direction: column;
-    align-items: center;
-    background-color: #191916;
-    z-index: 1000;
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    transition: opacity 0.5s ease;
-    opacity: 0;
-    visibility: hidden;
-  }
-
-  .menu-mobile.active {
-    opacity: 1; /* Hacer visible */
-    visibility: visible; /* Hacer visible */
-  }
-
-  .no-scroll {
-    overflow: hidden;
-  }
-
-  .menu-mobile-container {
-    display: flex;
-    flex-direction: column;
-    margin-top: 50px;
-    text-align: center;
-  }
-
-  .menu-mobile-container a {
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    padding: 30px;
-  }
-
-  .menu-mobile-container a:hover {
-    text-decoration: underline;
-  }
-
-  .menu-mobile-open,
-  .menu-mobile-close {
-    display: flex;
+  header .modal-open-button {
+    display: flex; /* Asegurar que se muestre el botón de hamburguesa */
     align-items: center;
     justify-content: center;
-    cursor: pointer;
+    z-index: 1100; /* Asegurar que esté por encima de la navbar */
     width: 40px;
     height: 40px;
+    border: 0;
+    margin: 0;
+    margin-right: 15px;
+    padding: 0;
   }
-  .menu-mobile-close {
+
+  header .modal-open-button img {
+    width: 40px; /* Ajustar el tamaño del icono de hamburguesa */
+    height: 40px;
+  }
+
+  header .modal-open-button:focus,
+  header .modal-open-button:active {
+    outline: none;
+    border: none;
+  }
+
+  header .modal-dialog {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+  }
+
+  header .modal-content {
     display: flex;
-    justify-content: end;
-    padding: 20px;
+    background-color: #191916;
+    height: 100%;
     width: 100%;
+    border: 0;
+    border-radius: 0;
+    margin: 0;
+    padding: 0; /* Asegurar que no haya padding */
+    box-sizing: border-box; /* Incluir el borde y el padding en el tamaño total del elemento */
+  }
+
+  header .modal-body {
+    display: flex;
+    margin: 0;
+    border-radius: 0px;
+    padding: 0;
+  }
+
+  header .btn-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     height: 100px;
   }
 
-  nav .navLogo img {
+  header .mobile-logo {
+    display: none;
+  }
+
+  header .btn-close {
+    padding: 0;
+    margin: 0;
+    height: 40px;
+    width: 40px;
+    margin-right: 35px;
+  }
+
+  header .btn-close img {
+    width: 40px;
+    height: 40px;
+  }
+
+  header .btn-close:active,
+  header .btn-close:focus,
+  header .btn-close:hover {
+    box-shadow: none;
+  }
+
+  header .modal-body ul {
+    display: flex;
+    width: 100%;
+    padding: 0;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 300px;
+  }
+
+  header .modal-body ul li a {
+    list-style-type: none;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  header .modal-body ul li a:hover {
+    text-decoration: underline;
+  }
+
+  header nav .navLogo img {
     height: 90px;
     width: auto;
   }
-
   /* Landing Main container */
   .card-container {
     margin-bottom: 0px;
@@ -763,6 +811,7 @@ button {
 
   .blog-container h1 {
     margin: 20px 0;
+    font-size: 60px;
     background-color: #9a927b22;
   }
 
@@ -814,46 +863,42 @@ button {
   }
 
   /* Contact */
-
   .contact-container {
+    width: 100%;
+    min-height: calc(
+      95vh - 100px
+    ); /* Ajusta este valor según la altura del footer */
+    padding: 0;
+    margin: 0;
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    h1 {
-      font-size: 50px;
-      margin-top: 50px;
-    }
-  }
-
-  .contact-content {
-    width: 100%;
+    justify-content: center; /* Centra verticalmente el contenido */
+    overflow: auto;
   }
 
   .contact-container section {
-    width: 100%;
-    label {
-      font-size: 20px;
-    }
+    width: 100%; /* Ajusta el ancho de la sección */
+    margin: 0 auto; /* Aplica márgenes automáticos para centrarla */
+    padding: 0px 20px;
+    flex: 1; /* Ocupa el espacio disponible dentro de .contact-container */
   }
 
-  .contact-container section input {
+  .contact-container section h1 {
+    font-weight: bolder;
+    margin: 30px 0;
+    font-size: 60px;
+  }
+
+  .contact-container section input,
+  .contact-container section textarea {
     width: 100%;
     margin: 10px 0;
     padding: 15px;
   }
 
-  .contact-container section textarea {
-    width: 100%;
-    margin: 10px 0;
-    padding: 20px;
-  }
-
   .contact-container section button {
-    margin: 20px 0 50px 0;
+    margin: 30px 0; /* Márgenes arriba y abajo */
   }
 
   .contact-container aside {
@@ -861,49 +906,99 @@ button {
   }
 
   .contact-form {
-    margin: 20px 0;
+    margin: 0 auto;
+  }
+  .send-button {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .send-button button {
+    margin: 0;
   }
 }
+
+/* MQ laptops */
 
 @media screen and (min-width: 1500px) and (max-width: 1800px) {
   /* Portfolio   */
   .portfolio-container {
+    width: 100%;
+    margin: 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
   }
 
   .img-portfolio-container {
-    width: 100%;
-    display: grid;
+    width: 90%;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
   }
-
-  .img-portfolio-container img {
-    width: 100%;
-    width: 400px;
+  .portfolio-container .img-portfolio-container img {
+    width: 100%; /* Ajusta el ancho de la imagen al contenedor */
+    height: 100%; /* Mantiene la proporción de la imagen */
   }
-  .img-portfolio-container img:last-child {
-    display: none;
+  .portfolio-container .img-portfolio-container img:last-child {
+    display: none; /* Oculta la última imagen */
   }
 
   /* Contact */
 
   .contact-container {
-    width: 80%;
+    width: 90%;
     margin: 150px auto 100px auto;
+    overflow: auto;
   }
+
+  .contact-container section h1 {
+    margin: 0px;
+  }
+  .send-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    button {
+      margin: 0;
+    }
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .contact-container {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
   .contact-form input,
   label,
   textarea {
+    width: 90%;
+    display: flex;
     margin: 15px 0 0px 20px;
   }
-
+  .contact-form textarea {
+    resize: none;
+    width: 90%;
+  }
   /* Blog */
 
   .blog-container {
     margin-bottom: 100px;
+    width: 100%;
+
+    section {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      width: 90%;
+    }
+    h1 {
+      font-weight: bolder;
+    }
   }
 
   .blog-container img {
@@ -918,5 +1013,113 @@ button {
 
   .blog-container button {
     margin-bottom: 40px;
+  }
+}
+
+/* MQ larger laptops */
+
+@media screen and (min-width: 1801px) and (max-width: 2300px) {
+  /* Portfolio   */
+  .portfolio-container {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .img-portfolio-container {
+    width: 90%;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+  .portfolio-container .img-portfolio-container img {
+    width: 100%; /* Ajusta el ancho de la imagen al contenedor */
+    height: 100%; /* Mantiene la proporción de la imagen */
+  }
+  .portfolio-container .img-portfolio-container img:last-child {
+    display: none; /* Oculta la última imagen */
+  }
+
+  /* Contact */
+  .contact-container {
+    display: flex;
+    width: 90%;
+    height: 90vh;
+    margin: 200px auto; /* Centra el contenedor horizontalmente */
+  }
+
+  .contact-container aside {
+    display: flex;
+    height: 700px;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-container aside img {
+    width: 100%; /* Ocupa el 100% del ancho del aside */
+    height: 100%; /* Ocupa el 100% de la altura del aside */
+    object-fit: cover; /* Mantiene la proporción de la imagen y cubre todo el contenedor */
+  }
+
+  .contact-container section {
+    flex: 1; /* Asegura que la sección ocupe el espacio disponible */
+    padding: 20px; /* Añade un poco de padding para el contenido */
+  }
+
+  .contact-form {
+    display: flex;
+
+    flex-direction: column;
+    align-items: flex-start; /* Alinea los elementos a la izquierda */
+    input,
+    textarea {
+      width: 90%;
+    }
+  }
+
+  .send-button {
+    display: flex;
+    justify-content: center; /* Centra el botón dentro del div */
+    width: 100%; /* Asegura que el div ocupe todo el ancho del formulario */
+    margin-top: 10px; /* Añade un margen superior si es necesario */
+  }
+  /* Blog */
+
+  .blog-container {
+    margin-bottom: 100px;
+    width: 100%;
+    section {
+      width: 90%;
+    }
+    h1 {
+      font-weight: bolder;
+    }
+  }
+
+  .blog-container img {
+    margin-top: 10px;
+    width: 80%;
+    height: 80%;
+  }
+
+  .blog-container p {
+    margin-bottom: 40px;
+  }
+
+  .blog-container button {
+    margin-bottom: 40px;
+  }
+
+  /* About me */
+  .data-container {
+    margin: 250px auto;
+    height: 800px;
+    img {
+      height: 900px;
+    }
+    section {
+      height: 100%;
+    }
   }
 }
