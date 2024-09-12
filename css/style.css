@@ -1283,6 +1283,23 @@ footer {
 
 /* MQ laptops */
 
+@media screen and (min-width: 901px) and (max-width: 1499px) {
+  header nav ul li {
+    padding: 14px;
+  }
+  .portfolio-container {
+    width: 90%;
+  }
+  .img-portfolio-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .img-portfolio-container img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
 @media screen and (min-width: 1500px) and (max-width: 1800px) {
   /* Global style */
   body {
