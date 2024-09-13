@@ -1284,6 +1284,11 @@ footer {
 /* MQ laptops */
 
 @media screen and (min-width: 901px) and (max-width: 1499px) {
+  .home-container .landing-img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+  }
   header nav ul li {
     padding: 14px;
   }
