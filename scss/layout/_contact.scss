@@ -32,11 +32,10 @@ body {
 
       h1 {
         // Heading inside the section
-        font-size: 60px;
+
         margin-bottom: 30px;
         justify-content: start;
         align-content: start;
-        font-weight: bolder;
       }
 
       .contact-form {
@@ -82,7 +81,7 @@ body {
           // Send button container
           display: flex;
           justify-content: center;
-          margin: 0;
+          margin: 30px;
 
           button {
             // Button inside the send button container
