@@ -1,0 +1,34 @@
+body {
+  .portfolio-container {
+    // Main container for the portfolio section
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+
+    h1 {
+      // Heading inside the portfolio container
+      text-align: center;
+      margin-top: 50px;
+      font-size: 60px;
+      font-weight: 700;
+    }
+
+    .img-portfolio-container {
+      // Container for portfolio images
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      margin: 40px auto;
+      gap: 15px;
+
+      img {
+        // Images inside the img-portfolio-container
+        width: 450px;
+        height: 450px;
+        cursor: pointer;
+      }
+    }
+  }
+}

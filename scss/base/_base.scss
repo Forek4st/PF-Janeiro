@@ -1,0 +1,11 @@
+body {
+  background-color: whitesmoke;
+  margin-top: 100px;
+  overflow-x: hidden;
+  & main {
+    margin-top: 150px;
+  }
+}
+body.no-scroll {
+  overflow: hidden;
+}

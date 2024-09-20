@@ -1,0 +1,60 @@
+/* Footer */
+footer {
+  height: 340px;
+  width: 100vw;
+  background-color: #191916;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    height: 50px;
+    margin-top: 40px;
+  }
+
+  .footer-links {
+    margin-top: 40px;
+    display: flex;
+    gap: 40px;
+
+    a {
+      text-decoration: none;
+      color: white;
+
+      &:hover {
+        text-decoration: underline;
+        text-underline-offset: 5px;
+      }
+    }
+  }
+
+  .media-info {
+    display: flex;
+    margin-top: 40px;
+    gap: 30px;
+    margin-bottom: 10px;
+
+    img {
+      width: 45px;
+      height: auto;
+      margin-top: 20px;
+    }
+  }
+
+  .copy-right {
+    margin-top: 40px;
+    color: rgb(149, 146, 146);
+    margin-bottom: 45px;
+    & a {
+      color: whitesmoke;
+      text-decoration: none;
+    }
+  }
+
+  .footer-logo {
+    height: 80px;
+    width: auto;
+  }
+}

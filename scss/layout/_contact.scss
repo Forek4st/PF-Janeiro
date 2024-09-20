@@ -1,0 +1,95 @@
+body {
+  .contact-container {
+    // Main container for the contact section
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin: 140px auto 50px auto;
+    padding: 20px;
+    background-color: #9a927b22;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+    img {
+      // Image inside the contact container
+      height: 650px;
+    }
+
+    aside {
+      // Aside container for the image
+      display: flex;
+      justify-content: center;
+      width: 50%;
+      margin: 20px;
+    }
+
+    section {
+      // Section container for the form
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 50%;
+
+      h1 {
+        // Heading inside the section
+        font-size: 60px;
+        margin-bottom: 30px;
+        justify-content: start;
+        align-content: start;
+        font-weight: bolder;
+      }
+
+      .contact-form {
+        // Form container
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+        label {
+          // Label inside the form
+          display: block;
+          margin-bottom: 5px;
+          font-weight: bold;
+        }
+
+        input,
+        textarea {
+          // Input and textarea inside the form
+          width: 500px;
+          padding: 10px;
+          border: 1px solid #ddd;
+          border-radius: 10px;
+          margin-bottom: 15px;
+          box-sizing: border-box;
+          resize: none;
+        }
+
+        input::placeholder,
+        textarea::placeholder {
+          // Placeholder styles for input and textarea
+          padding-left: 3px;
+        }
+
+        input:focus,
+        textarea:focus {
+          // Focus styles for input and textarea
+          border: 2px solid black;
+          outline: none;
+        }
+
+        .send-button {
+          // Send button container
+          display: flex;
+          justify-content: center;
+          margin: 0;
+
+          button {
+            // Button inside the send button container
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}

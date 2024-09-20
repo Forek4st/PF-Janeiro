@@ -1,0 +1,67 @@
+body {
+  .data-container {
+    // Main container for the data section
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+
+    .data {
+      // Section container
+      height: 600px;
+      width: 80vw;
+      margin: 100px auto;
+      display: flex;
+      flex-direction: row;
+      padding: 0 100px;
+      align-items: center;
+      justify-content: center;
+      background-color: #9a927b22;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+      img {
+        // Image inside the data section
+        height: 650px;
+      }
+
+      div {
+        // Div inside the data section
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        margin: 0 0 0 120px;
+
+        h1 {
+          // Heading inside the div
+          margin-bottom: 60px;
+          font-size: 60px;
+        }
+
+        p {
+          // Paragraph inside the div
+          text-align: justify;
+          padding: 20px;
+          line-height: 25px;
+          font-weight: 350;
+          margin-bottom: 60px;
+        }
+      }
+
+      button {
+        // Button inside the data section
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 15px auto 40px;
+
+        a {
+          // Anchor inside the button
+          text-decoration: none;
+          color: white;
+        }
+      }
+    }
+  }
+}

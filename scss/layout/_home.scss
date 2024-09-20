@@ -1,0 +1,151 @@
+body {
+  // Main container for the home page
+  .home-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+
+    // Landing image
+    .landing-img {
+      width: 100%;
+      height: auto;
+    }
+
+    // Container for the cards
+    .card-container {
+      margin-bottom: 30px;
+
+      // Work card
+      .work-card {
+        display: flex;
+        align-items: flex-start;
+        position: relative;
+        max-width: 1200px;
+        margin: 50px auto;
+        border-radius: 8px;
+        background-color: #9a927b22;
+        box-shadow: 25px 25px 76px 8px rgba(0, 0, 0, 0.13);
+        box-sizing: border-box;
+        width: fit-content;
+
+        // Image inside the work card
+        img {
+          width: 584px;
+          height: 730px;
+          border-radius: 8px;
+          object-fit: cover;
+        }
+
+        // Work description
+        .work-description {
+          text-align: justify;
+          padding: 30px;
+          width: 584px;
+          height: 730px;
+          line-height: 30px;
+
+          h2 {
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-weight: 600;
+          }
+        }
+
+        // Specific styles for card one and three
+        &.card-one,
+        &.card-three {
+          .black-label {
+            margin-left: -75px;
+            margin-right: -75px;
+            color: #fff;
+            background-color: #000;
+            margin-bottom: 40px;
+            width: 544px;
+            height: 43px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            .label-text {
+              font-size: 25px;
+              text-transform: uppercase;
+              margin: 0;
+            }
+          }
+        }
+
+        // Specific styles for card two and four
+        &.card-two,
+        &.card-four {
+          .black-label-left {
+            position: relative;
+            z-index: 10;
+            margin-left: 75px;
+            margin-right: 75px;
+            background-color: black;
+            color: white;
+            padding: 10px;
+            color: #fff;
+            background-color: #000;
+            margin-bottom: 40px;
+            width: 544px;
+            height: 43px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            .label-text {
+              font-size: 25px;
+              text-transform: uppercase;
+              margin: 0;
+            }
+          }
+
+          // Image on the left in card two and four
+          .work-img-left {
+            position: relative;
+            z-index: 1;
+          }
+        }
+      }
+    }
+
+    // Section for more projects
+    .more-projects {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      text-align: center;
+
+      h2 {
+        color: rgb(80, 80, 80);
+        font-size: 20px;
+        font-weight: 400;
+        margin-bottom: 35px;
+      }
+
+      // Button to view more projects
+      .more-button {
+        width: 300px;
+        height: auto;
+        background-color: black;
+        text-transform: uppercase;
+        color: white;
+        border: none;
+        padding: 23px 33px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 1em;
+        font-weight: 500;
+        border-radius: 4px;
+        cursor: pointer;
+        letter-spacing: 2px;
+        margin-bottom: 80px;
+      }
+    }
+  }
+}

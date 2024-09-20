@@ -1,0 +1,16 @@
+{
+  "name": "coderhouse-janeiro",
+  "version": "1.0.1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch scss/main.scss:css/style.css"
+  },
+  "keywords": [],
+  "author": "Forek4st",
+  "license": "ISC",
+  "description": "pre entrega 3",
+  "dependencies": {
+    "sass": "^1.78.0"
+  }
+}
