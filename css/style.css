@@ -1159,6 +1159,116 @@ body .contact-container section .contact-form .send-button button {
     margin: 0;
   }
 }
+@media screen and (min-width: 901px) and (max-width: 1499px) {
+  header nav ul li {
+    padding: 14px;
+  }
+  /* Portfolio */
+  body .portfolio-container {
+    width: 90%;
+  }
+  body .portfolio-container .img-portfolio-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  body .portfolio-container .img-portfolio-container img {
+    width: 100%;
+    object-fit: cover;
+  }
+  body .portfolio-container .img-portfolio-container img:last-child {
+    display: none;
+  }
+  /* About Me */
+  body .data-container .data {
+    display: inline-flex;
+    height: 700px;
+    margin: 80px auto;
+    width: 90%;
+    padding: 20px;
+  }
+  body .data-container .data img {
+    height: 600px;
+    width: 100%;
+  }
+  body .data-container .data section {
+    height: 100%;
+  }
+  body .data-container .data div {
+    width: 100%;
+    margin: 0;
+  }
+  body .data-container .data div h1 {
+    margin-top: 30px;
+  }
+  body .data-container .data div p {
+    text-align: justify;
+    line-height: 30px;
+  }
+  /* Blog */
+  body .blog-container {
+    margin-bottom: 100px;
+    width: 100%;
+  }
+  body .blog-container section {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+  }
+  body .blog-container section img {
+    margin: 0;
+    width: 100%;
+    height: auto;
+    padding: 20px 120px;
+  }
+  body .blog-container section p {
+    width: 100%;
+    padding: 20px 120px;
+    margin-bottom: 40px;
+  }
+  body .blog-container section button {
+    margin-bottom: 40px;
+  }
+  /* Contact */
+  body .contact-container {
+    width: 90%;
+    height: 800px;
+    margin: 150px auto 100px auto;
+    overflow: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  body .contact-container img {
+    height: 600px;
+  }
+  body .contact-container section h1 {
+    margin: 0;
+  }
+  body .contact-container .contact-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  body .contact-container .contact-form label {
+    margin: 10px;
+    font-weight: bold;
+  }
+  body .contact-container .contact-form input,
+  body .contact-container .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-sizing: border-box;
+  }
+  body .contact-container .contact-form textarea {
+    resize: none;
+  }
+  body .contact-container .contact-form .send-button {
+    margin-top: 50px;
+  }
+  body .contact-container .contact-form .send-button button {
+    color: white;
+    margin: 30px;
+  }
+}
 @media screen and (min-width: 1500px) and (max-width: 1800px) {
   /* Global style */
   body {
