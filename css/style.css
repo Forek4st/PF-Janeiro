@@ -563,6 +563,21 @@ body .contact-container section .contact-form .send-button button {
     box-shadow: none;
   }
   /* Landing page */
+  body .home-container .byTanne {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  body .home-container .byTanne h1 {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 40px;
+  }
+  body .home-container .byTanne h2 {
+    margin: 0;
+  }
   body .home-container .card-container {
     margin-bottom: 0;
     background-color: whitesmoke;
@@ -728,9 +743,6 @@ body .contact-container section .contact-form .send-button button {
   body .blog-container {
     margin: 120px 0 50px 0;
     background-color: whitesmoke;
-  }
-  body .blog-container h1 {
-    font-size: 60px;
   }
   body .blog-container .blog-title {
     display: flex;
