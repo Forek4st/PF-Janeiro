@@ -1,5 +1,5 @@
 /* MQ tablets */
-@media screen and (min-width: 481px) and (max-width: 900px) {
+@media screen and (min-width: 481px) and (max-width: 1050px) {
   /* Nav bar */
   header {
     nav {
@@ -203,26 +203,20 @@
   }
 
   /* Portfolio */
-  body .portfolio-container {
-    width: 100vw;
-    row-gap: 0;
-    background-color: rgba(154, 146, 123, 0.133);
+  body {
+    .portfolio-container {
+      width: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
 
-    .img-portfolio-container {
-      margin: 15px auto;
-      grid-template-columns: 1fr 1fr;
-      gap: 5px;
-
-      img {
+      .img-portfolio-container {
         width: 100%;
-        height: 450px;
-        margin-bottom: 5px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        padding: 0 5px;
       }
-    }
-
-    h1 {
-      font-size: 60px;
-      margin-top: 30px;
     }
   }
 
