@@ -196,9 +196,10 @@ body .home-container .card-container .work-card .work-description {
   height: 730px;
   line-height: 30px;
 }
-body .home-container .card-container .work-card .work-description h2 {
+body .home-container .card-container .work-card .work-description h3 {
   margin-top: 20px;
   margin-bottom: 10px;
+  font-size: 35px;
   font-weight: 600;
 }
 body .home-container .card-container .work-card.card-one .black-label, body .home-container .card-container .work-card.card-three .black-label {
