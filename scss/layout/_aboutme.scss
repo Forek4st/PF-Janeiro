@@ -1,10 +1,11 @@
+@import '../utilities/variables';
+@import '../utilities/mixins';
 body {
   .data-container {
     // Main container for the data section
-    display: flex;
+
     width: 100vw;
-    flex-direction: column;
-    align-items: center;
+    @include flex-column;
     margin: 0;
 
     .data {
@@ -12,12 +13,9 @@ body {
       height: 600px;
       width: 80vw;
       margin: 100px auto;
-      display: flex;
-      flex-direction: row;
+      @include flex-row;
       padding: 0 100px;
-      align-items: center;
-      justify-content: center;
-      background-color: #9a927b22;
+      background-color: $cards-background-color;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 
       img {
@@ -27,9 +25,7 @@ body {
 
       div {
         // Div inside the data section
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flex-column;
         padding: 20px;
         margin: 0 0 0 120px;
 
@@ -50,9 +46,7 @@ body {
 
       button {
         // Button inside the data section
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex-row;
         margin: 15px auto 40px;
 
         a {

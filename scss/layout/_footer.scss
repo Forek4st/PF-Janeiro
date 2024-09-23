@@ -1,14 +1,12 @@
+@import '../utilities/variables';
+@import '../utilities/mixins';
 /* Footer */
 footer {
   height: 340px;
   width: 100vw;
-  background-color: #191916;
+  background-color: $nav-footer-background-color;
   color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
+  @include flex-column;
   img {
     height: 50px;
     margin-top: 40px;
@@ -16,7 +14,7 @@ footer {
 
   .footer-links {
     margin-top: 40px;
-    display: flex;
+    @include flex-row;
     gap: 40px;
 
     a {
@@ -31,7 +29,7 @@ footer {
   }
 
   .media-info {
-    display: flex;
+    @include flex-row;
     margin-top: 40px;
     gap: 30px;
     margin-bottom: 10px;

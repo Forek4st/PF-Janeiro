@@ -1,17 +1,13 @@
 body {
   .portfolio-container {
     // Main container for the portfolio section
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
     width: 90%;
     margin: auto;
 
     h1 {
       // Heading inside the portfolio container
       text-align: center;
-      margin-top: 50px;
+      margin-top: 150px;
     }
 
     .img-portfolio-container {

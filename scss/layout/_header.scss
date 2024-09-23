@@ -1,9 +1,11 @@
+@import '../utilities/variables';
+@import '../utilities/mixins';
+
 // Navigation
 nav {
-  display: flex;
-  align-items: center;
+  @include flex-row;
   height: 100px;
-  background-color: #191916;
+  background-color: $nav-footer-background-color;
   color: white;
   padding: 20px;
   position: fixed;
@@ -13,8 +15,6 @@ nav {
   z-index: 1000;
 
   .navLogo {
-    display: flex;
-    align-items: center;
     margin-right: auto;
 
     img {
@@ -39,11 +39,24 @@ nav {
     li {
       list-style: none;
       padding: 0 25px;
+      position: relative;
 
-      &:hover {
-        text-decoration: underline;
-        color: white;
-        text-underline-offset: 5px;
+      &:before {
+        content: '';
+        position: absolute;
+        width: calc(100% - 50px);
+        height: 2px;
+        background-color: #fff;
+        border-radius: 5px;
+        transform: scaleX(0);
+        transition: all 0.2s ease;
+        bottom: -3px;
+        left: 25px;
+      }
+
+      &:hover:before,
+      &.active:before {
+        transform: scaleX(1);
       }
     }
   }
