@@ -30,17 +30,17 @@ body {
         margin: 0 0 0 120px;
 
         h1 {
-          // Heading inside the div
-          margin-bottom: 60px;
+          margin-top: 30px;
+          margin-bottom: 30px;
         }
-
         p {
-          // Paragraph inside the div
           text-align: justify;
-          padding: 20px;
-          line-height: 25px;
-          font-weight: 350;
-          margin-bottom: 60px;
+          line-height: 35px;
+          margin: 0;
+          padding: 5px;
+        }
+        button {
+          margin: 40px;
         }
       }
 
