@@ -765,11 +765,12 @@ body .contact-container section .contact-form .send-button button {
   }
   body .data-container .data div h1 {
     margin: 0;
+    margin-bottom: 20px;
   }
   body .data-container .data div p {
     text-align: justify;
-    padding: 20px;
-    line-height: 30px;
+    padding: 5px;
+    line-height: 28px;
     font-weight: 350;
   }
   body .data-container .data button {
