@@ -7,7 +7,6 @@
       name="description"
       content="By Tanne - Aintzane Dieguez, an expert in interior design. Explore her portfolio of stylish, elegant, and modern interior spaces. Transform your spaces with innovative design."
     />
-
     <meta
       name="keywords"
       content="interior design, home decor, By Tanne, design projects, architecture, modern design, residential projects, luxury interiors, portfolio"
@@ -25,12 +24,15 @@
   </head>
 
   <body>
-    <!-- Navigation bar with logo -->
     <header>
+      <!-- Navigation bar -->
       <nav>
+        <!-- Logo -->
         <a href="index.html" class="navLogo">
           <img src="./images/byTanneLogo.png" alt="By Tanne logo" />
         </a>
+
+        <!-- Navigation links -->
         <ul>
           <li class="active"><a href="index.html">Home</a></li>
           <li><a href="./pages/about.html">About Me</a></li>
@@ -38,21 +40,22 @@
           <li><a href="./pages/blog.html">Blog</a></li>
           <li><a href="./pages/contact.html">Contact</a></li>
         </ul>
-        <!-- Button trigger modal -->
+
+        <!-- Button to open the mobile navigation modal -->
         <button
           type="button"
           class="btn modal-open-button"
           data-bs-toggle="modal"
           data-bs-target="#exampleModal"
         >
+          <!-- Icon for mobile navigation menu -->
           <img
             src="./images/mobile-img/menu-hamburger.svg"
             alt="Icon for menu navigation"
           />
         </button>
       </nav>
-
-      <!-- Modal -->
+      <!-- Modal menu for mobile navigation -->
       <div
         class="modal fade"
         id="exampleModal"
@@ -62,6 +65,7 @@
       >
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
+            <!-- Mobile logo -->
             <div class="btn-container">
               <div>
                 <img
@@ -70,6 +74,7 @@
                   alt="By Tanne logo"
                 />
               </div>
+              <!-- Modal Close Buton -->
               <div>
                 <button
                   type="button"
@@ -81,7 +86,7 @@
                 </button>
               </div>
             </div>
-
+            <!-- Mobile modal body with navigation links -->
             <div class="modal-body text-center">
               <ul>
                 <li><a href="index.html">Home</a></li>
@@ -97,18 +102,22 @@
     </header>
 
     <main class="home-container">
+      <!-- Landing image -->
       <img
         src="./images/landing.jpg"
         alt="Modern kitchen design"
         class="landing-img"
       />
 
+      <!-- Main title -->
       <div class="byTanne">
         <h1>Interior Design</h1>
         <h2>By Tanne</h2>
       </div>
       <hr />
+      <!-- Most Relevant Projects -->
       <section class="card-container">
+        <!-- Project 1 -->
         <div class="work-card card-one">
           <img
             src="./images/porfolio-img/portfolio48.jpg"
@@ -138,6 +147,7 @@
           </div>
         </div>
 
+        <!-- Project 2 -->
         <div class="work-card card-two">
           <div class="work-description">
             <div class="black-label-left">
@@ -167,6 +177,8 @@
             class="work-img-left"
           />
         </div>
+
+        <!-- Project 3 -->
         <div class="work-card card-three">
           <img
             src="./images/porfolio-img/portfolio39.jpg"
@@ -194,6 +206,7 @@
           </div>
         </div>
 
+        <!-- Project 4 -->
         <div class="work-card card-four">
           <div class="work-description">
             <div class="black-label-left">
@@ -223,6 +236,8 @@
           />
         </div>
       </section>
+
+      <!-- More projects section -->
       <div class="more-projects">
         <h2>Like to see more projects?</h2>
         <a href="./pages/portfolio.html" class="more-button"
@@ -232,17 +247,20 @@
     </main>
 
     <footer>
+      <!-- Footer logo -->
       <a href="index.html">
         <img
           src="./images/byTanneLogo.png"
           alt="By Tanne logo"
           class="footer-logo"
       /></a>
+      <!-- Footer links -->
       <div class="footer-links">
         <a href="./pages/about.html">About</a>
         <a href="./pages/contact.html">Contact</a>
         <a href="https://thesefourwallsblog.com/" target="_blank">Sponsors</a>
       </div>
+      <!-- Social media links -->
       <div class="media-info">
         <a href="https://instagram.com/by_tanne" target="_blank"
           ><img src="./images/media-instagram.svg" alt="Instagram Logo"
@@ -251,6 +269,7 @@
           ><img src="./images/media-linkedin.svg" alt="Linkedin Logo"
         /></a>
       </div>
+      <!-- Copyright information -->
       <small class="copy-right"
         >By Tanne © 2024 | Made by
         <a href="https://github.com/Forek4st" target="_blank"
